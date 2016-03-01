@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: "lucida grande", helvetica, sans-serif;
+}
+
+header {
+
+}
+
+header > div a {
+  color: inherit;
+}
+
+img[src$="logo.png"] {
+  display: block;
+  float: left;
+}
+
+header nav {
+  padding: 1em 1.5em;
+  color: #fff;
+  background: #1b75bc;
+  background-image: linear-gradient(to bottom, #1b75bc, #1766a3);
+}
+
+header nav::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+header nav > div {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+header nav ul {
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav li + li {
+  margin-left: 2em;
+}
